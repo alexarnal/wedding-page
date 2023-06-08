@@ -390,10 +390,17 @@
       font-size: 24px !important;
     }
 
+    .custom-font-size-itinerary {
+      font-size: 24px !important;
+    }
+
     @media only screen and (max-width: 768px) {
       .elementor-widget-container .custom-font-size {
         font-size: 18px !important;
       }
+      .custom-font-size-itinerary {
+      font-size: 20px !important;
+    }
     }
    </style>
    <style>
@@ -1245,6 +1252,8 @@
                class="elementor-section elementor-top-section elementor-element elementor-element-b69cca6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                data-element_type="section" data-id="b69cca6" data-settings='{"background_background":"classic"}'
                style="background-color: #FFF">
+               <!-- data-settings='{"background_background":"slideshow","background_slideshow_gallery":[{"id":1626,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"},{"id":1629,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"},{"id":1625,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"},{"id":1247,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"},{"id":1274,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"}],"background_slideshow_ken_burns":"yes","background_slideshow_loop":"yes","background_slideshow_slide_duration":5000,"background_slideshow_slide_transition":"fade","background_slideshow_transition_duration":500,"background_slideshow_ken_burns_zoom_direction":"in"}' -->
+
                <div class="elementor-container elementor-column-gap-default">
                   <div class="elementor-row">
                      <div
@@ -1440,8 +1449,19 @@
                </div>
                <div class="timeline">
                   <div class="container left">
-                    <div class="content">
-                     <h4 class="custom-font-size "
+                    <div class="content elementor-element elementor-widget elementor-widget-heading elementor-widget-container">
+                     <!-- <div class="elementor-element elementor-element-f408f0e animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+                                 data-element_type="widget" data-id="f408f0e"
+                                 data-settings='{"_animation":"fadeIn","_animation_delay":3000}'
+                                 data-widget_type="heading.default">
+                                 <div class="elementor-widget-container">
+                                    <h4 class="custom-font-size elementor-heading-title elementor-size-default "
+                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
+                                       2 PM<br>Ceremony
+                                    </h4>
+                                 </div>
+                              </div> -->
+                     <h4 class="custom-font-size-itinerary "
                                        style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
                                        2 PM<br>Ceremony
                                     </h4>
@@ -1453,8 +1473,8 @@
                     </div>
                   </div>
                   <div class="container right">
-                     <div class="content">
-                      <h4 class="custom-font-size "
+                     <div class="content elementor-element elementor-widget elementor-widget-heading elementor-widget-container">
+                      <h4 class="custom-font-size-itinerary elementor-heading-title elementor-size-default "
                                         style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
                                         9 PM<br>Dance
                                      </h4>
@@ -1470,7 +1490,7 @@
             <!-- Our story sections -->
             <section
                class="elementor-section elementor-top-section elementor-element elementor-element-0bec20d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="0bec20d">
+               data-element_type="section" data-id="0bec20d" id="our_story">
                <div class="elementor-container elementor-column-gap-default">
                   <div class="elementor-row">
                      <div
@@ -1789,9 +1809,10 @@
                </div>
             </section>
 
+            <!-- Gallery -->
             <section
                class="elementor-section elementor-top-section elementor-element elementor-element-1dd33da elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="1dd33da" data-settings='{"background_background":"classic"}'>
+               data-element_type="section" data-id="1dd33da" id="gallery" data-settings='{"background_background":"classic"}'>
                <div class="elementor-background-overlay">
                </div>
                <div class="elementor-container elementor-column-gap-default">
@@ -2101,7 +2122,7 @@
                   </div>
                </div>
             </section>
-            <section
+            <!-- <section
                class="elementor-section elementor-top-section elementor-element elementor-element-61dab93 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                data-element_type="section" data-id="61dab93" data-settings='{"background_background":"classic"}'>
                <div class="elementor-background-overlay">
@@ -2342,10 +2363,12 @@
                      </div>
                   </div>
                </div>
-            </section>
+            </section> -->
+
+            <!-- RSVP -->
             <section
                class="elementor-section elementor-top-section elementor-element elementor-element-7f068da elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="7f068da" data-settings='{"background_background":"classic"}'>
+               data-element_type="section" data-id="7f068da" id="rsvp" data-settings='{"background_background":"classic"}'>
                <div class="elementor-background-overlay">
                </div>
                <div class="elementor-container elementor-column-gap-default">
@@ -2487,7 +2510,7 @@
                   </div>
                </div>
             </section>
-            <section
+            <!-- <section
                class="elementor-section elementor-top-section elementor-element elementor-element-29a40d5c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                data-element_type="section" data-id="29a40d5c">
                <div class="elementor-container elementor-column-gap-default">
@@ -2554,7 +2577,7 @@
                      </div>
                   </div>
                </div>
-            </section>
+            </section> -->
             <section
                class="elementor-section elementor-top-section elementor-element elementor-element-b12ca92 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                data-element_type="section" data-id="b12ca92">
@@ -2572,9 +2595,13 @@
                                     <div class="elementor-image">
                                        <img alt="" class="attachment-full size-full wp-image-1447" decoding="async"
                                           height="122" loading="lazy" sizes="(max-width: 512px) 100vw, 512px"
+                                          src="./images/saralis_and_alex.svg"
+                                          width="512" />
+                                       <!-- <img alt="" class="attachment-full size-full wp-image-1447" decoding="async"
+                                          height="122" loading="lazy" sizes="(max-width: 512px) 100vw, 512px"
                                           src="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/logo@2x.png"
                                           srcset="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/logo@2x.png 512w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/logo@2x-300x71.png 300w"
-                                          width="512" />
+                                          width="512" /> -->
                                     </div>
                                  </div>
                               </div>
@@ -2591,21 +2618,21 @@
                                           </a>
                                        </li>
                                        <li class="elementor-icon-list-item elementor-inline-item">
-                                          <a href="#">
+                                          <a href="#our_story">
                                              <span class="elementor-icon-list-text">
                                                 Our Story
                                              </span>
                                           </a>
                                        </li>
                                        <li class="elementor-icon-list-item elementor-inline-item">
-                                          <a href="#">
+                                          <a href="#gallery">
                                              <span class="elementor-icon-list-text">
                                                 Gallery
                                              </span>
                                           </a>
                                        </li>
                                        <li class="elementor-icon-list-item elementor-inline-item">
-                                          <a href="#">
+                                          <a href="#rsvp">
                                              <span class="elementor-icon-list-text">
                                                 RSVP
                                              </span>
@@ -2614,15 +2641,15 @@
                                     </ul>
                                  </div>
                               </div>
-                              <div
+                              <!-- <div
                                  class="elementor-element elementor-element-6ce0e8b elementor-widget elementor-widget-text-editor"
                                  data-element_type="widget" data-id="6ce0e8b" data-widget_type="text-editor.default">
                                  <div class="elementor-widget-container">
                                     <div class="elementor-text-editor elementor-clearfix">
-                                       © 2020 Robbie &amp; Magie by Jegtheme. ALL RIGHTS RESERVED
+                                       © 2023 Saralis &amp; Magie by Jegtheme. ALL RIGHTS RESERVED
                                     </div>
                                  </div>
-                              </div>
+                              </div> -->
                            </div>
                         </div>
                      </div>
