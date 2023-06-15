@@ -395,6 +395,22 @@
       font-size: 24px !important;
     }
 
+    .itinerary-align {
+      text-align: left;
+    }
+
+    .location-list-item{
+      align-items: flex-start !important;
+    }
+
+    .location-icon{
+      margin-top: 5px;
+    }
+
+    .elementor-icon-list-icon{
+      color:#b15026
+    }
+
     @media only screen and (max-width: 768px) {
       .elementor-widget-container .custom-font-size {
         font-size: 18px !important;
@@ -402,6 +418,19 @@
       .custom-font-size-itinerary {
       font-size: 20px !important;
     }
+      .itinerary-align {
+      text-align: center !important;
+      }
+      .elementor-icon-list-item {
+         flex-direction: column !important;
+         margin-top: 18px !important;
+      }
+      .location-list-item{
+         align-items: center !important;
+         }
+      .location-icon{
+         margin-top: 0px;
+      }
     }
    </style>
    <style>
@@ -1309,17 +1338,17 @@
                                          <div class="elementor-widget-wrap">
                                            <div class="elementor-element elementor-element-13e7357 elementor-widget elementor-widget-heading" data-id="13e7357" data-element_type="widget" data-widget_type="heading.default">
                                              <div class="elementor-widget-container">
-                                               <h3 class="elementor-heading-title elementor-size-default"
+                                               <h3 class="elementor-heading-title elementor-size-default custom-font-size-itinerary itinerary-align"
                                                style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
                                                Wedding Ceremony 
                                                </h3>
                                              </div>
                                            </div>
                                            <div class="elementor-element elementor-element-c1c8230 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1c8230" data-element_type="widget" data-widget_type="icon-list.default">
-                                             <div class="elementor-widget-container">
-                                                <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 2px;">OUR LADY OF MOUNT CARMEL </p>
-                                               <ul class="elementor-icon-list-items">
-                                                 <li class="elementor-icon-list-item">
+                                             <div class="elementor-widget-container ">
+                                                <p class="itinerary-align" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 12px;">OUR LADY OF MOUNT CARMEL </p>
+                                               <ul class="elementor-icon-list-items" >
+                                                 <li class="elementor-icon-list-item" >
                                                    <span class="elementor-icon-list-icon">
                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="fill:none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                                                    </span>
@@ -1333,16 +1362,16 @@
                                                    style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
                                                    2 PM - 3 PM</span>
                                                  </li>
-                                                 <li class="elementor-icon-list-item" style="align-items: flex-start">
-                                                   <span class="elementor-icon-list-icon" style="margin-top: 5px;">
+                                                 <li class="elementor-icon-list-item location-list-item">
+                                                   <span class="elementor-icon-list-icon location-icon" >
                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin" style=" fill:none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                                    
                                                    </span>
-                                                   <a href="https://goo.gl/maps/AY7U96wtS8JvtCpy8" style="text-decoration: none;">
+                                                   
                                                       <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100);">
-                                                        131 S Zaragoza Rd<br>El Paso, Texas 79907
+                                                         <a href="https://goo.gl/maps/AY7U96wtS8JvtCpy8" style="text-decoration: none; color: rgb(100, 100, 100);">131 S Zaragoza Rd<br>El Paso, Texas 79907</a>
                                                       </span>
-                                                    </a>
+                                                    
                                                     
                                                  </li>
                                                </ul>
@@ -1355,8 +1384,8 @@
                                        <div class="elementor-column-wrap elementor-element-populated">
                                          <div class="elementor-widget-wrap">
                                            <div class="elementor-element elementor-element-13e7357 elementor-widget elementor-widget-heading" data-id="13e7357" data-element_type="widget" data-widget_type="heading.default">
-                                             <div class="elementor-widget-container">
-                                               <h3 class="elementor-heading-title elementor-size-default"
+                                             <div class="elementor-widget-container itinerary-align">
+                                               <h3 class="elementor-heading-title elementor-size-default custom-font-size-itinerary"
                                                style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
                                                Wedding Reception
                                                </h3>
@@ -1364,7 +1393,7 @@
                                            </div>
                                            <div class="elementor-element elementor-element-c1c8230 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1c8230" data-element_type="widget" data-widget_type="icon-list.default">
                                              <div class="elementor-widget-container">
-                                                <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 2px;">EPIC RAILYARD</p>
+                                                <p class="itinerary-align" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 12px;">EPIC RAILYARD</p>
                                                <ul class="elementor-icon-list-items">
                                                  <li class="elementor-icon-list-item">
                                                    <span class="elementor-icon-list-icon">
@@ -1380,16 +1409,15 @@
                                                    style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
                                                    9 PM - 1 AM</span>
                                                  </li>
-                                                 <li class="elementor-icon-list-item" style="align-items: flex-start">
-                                                   <span class="elementor-icon-list-icon" style="margin-top: 5px;">
+                                                 <li class="elementor-icon-list-item location-list-item">
+                                                   <span class="elementor-icon-list-icon location-icon">
                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin" style=" fill:none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                                    
                                                    </span>
-                                                   <a href="https://goo.gl/maps/dfy1j9gSeBWEEUcF8" style="text-decoration: none;">
                                                       <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100);">
-                                                        2201 E Mills Ave<br>El Paso, Texas 79901
+                                                         <a href="https://goo.gl/maps/dfy1j9gSeBWEEUcF8" style="text-decoration: none !important;color: rgb(100, 100, 100);">2201 E Mills Ave<br>El Paso, Texas 79901</a>
                                                       </span>
-                                                    </a>
+                                                    
                                                     
                                                  </li>
                                                </ul>
@@ -1408,7 +1436,7 @@
                                  data-widget_type="heading.default">
                                  <div class="elementor-widget-container">
                                     <h4 class="elementor-heading-title elementor-size-default"
-                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
+                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100); font-size:16px">
                                        The adventure of a lifetime begins in:
                                     </h4>
                                  </div>
@@ -1447,13 +1475,15 @@
                                              Hours
                                           </span>
                                        </div>
-                                       <!-- <div class="elementor-countdown-item">
-                                          <span class="elementor-countdown-digits elementor-countdown-minutes">
+                                       <div class="elementor-countdown-item">
+                                          <span class="elementor-countdown-digits elementor-countdown-minutes"
+                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
                                           </span>
-                                          <span class="elementor-countdown-label">
+                                          <span class="elementor-countdown-label"
+                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
                                              Minutes
                                           </span>
-                                       </div> -->
+                                       </div> 
                                        <!-- <div class="elementor-countdown-item">
                                           <span class="elementor-countdown-digits elementor-countdown-seconds">
                                           </span>
@@ -2834,7 +2864,7 @@
 
    <script>
       // The JavaScript code
-      var myDate = new Date("2023-09-09"); // use the specific date you want here
+      var myDate = new Date("2023-09-09T14:00:00-06:00"); // use the specific date you want here
       var myTimestamp = Math.floor(myDate.getTime() / 1000); // convert it to Unix timestamp
 
       // Get the countdown wrapper element
