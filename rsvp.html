@@ -409,6 +409,59 @@
 	  font-size: 42px !important;
 	}
     }
+
+    .custom-font-size {
+      font-size: 24px !important;
+    }
+
+    .custom-font-size-itinerary {
+      font-size: 24px !important;
+    }
+
+    .itinerary-align {
+      text-align: center;
+    }
+
+    .location-list-item{
+      align-items: flex-start !important;
+    }
+
+    .location-icon{
+      margin-top: 5px;
+    }
+
+    .elementor-icon-list-icon{
+      color:#b15026
+    }
+    .cocktail_dinner_image{
+         width:360px;
+         margin-top: 20px;
+      }
+
+    @media only screen and (max-width: 768px) {
+      .elementor-widget-container .custom-font-size {
+        font-size: 18px !important;
+      }
+      .custom-font-size-itinerary {
+      font-size: 20px !important;
+    }
+      .itinerary-align {
+      text-align: center !important;
+      }
+      .elementor-icon-list-item {
+         /* flex-direction: column !important; */
+         margin-top: 18px !important;
+      }
+      .location-list-item{
+         align-items: center !important;
+         }
+      .location-icon{
+         margin-top: 0px;
+      }
+      .cocktail_dinner_image{
+         width:240px
+      }
+    }
    </style>
    <style>
       * {
@@ -516,6 +569,40 @@
       text-align: center;
       }
 
+      .top-flower {
+      position: absolute;
+      z-index: 1000;
+      max-height: 240px; /* Set your desired maximum width */
+      width: 25%;
+      height: auto;
+      top: 0;
+      left: 0;
+      transform-origin: top left;
+      }
+
+      .bottom-flower{
+      position: absolute;
+      z-index: 1000;
+      max-height: 240px; /* Set your desired maximum width */
+      width: 25%;
+      height: auto;
+      padding-bottom: 20px;
+      padding-right: 36px;
+      bottom: 0;
+      right: 0;
+      transform-origin: bottom right;
+      }
+
+      section.elementor-element-98171d2 {
+      /* background-color: #FFF !important; */
+      background: #FFF !important;
+      /* color: #FFF !important; */
+      }
+      .elementor-background-overlay {
+         background-color: #FFF!important;
+         background: #FFF!important;
+         opacity: 1!important;
+      }
       /* Media queries - Responsive timeline on screens less than 600px wide */
       @media screen and (max-width: 720px) {
       /* Place the timelime to the left */
@@ -841,194 +928,84 @@
          </filter>
       </defs>
    </svg>
+   
    <div class="elementor elementor-4" data-elementor-id="4" data-elementor-type="wp-page">
+      
       <div class="elementor-inner" >
          <div class="elementor-section-wrap" >
-            <!-- <section
-               class="elementor-section elementor-top-section elementor-element elementor-element-60be972a elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="60be972a" data-settings='{"background_background":"classic"}' 
-               style="background-color: #F4F0ED;">
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-row">
-                     <div
-                        class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1dcb7e8d"
-                        data-element_type="column" data-id="1dcb7e8d">
-                        <div class="elementor-column-wrap elementor-element-populated">
-                           <div class="elementor-widget-wrap">
-                              <div
-                                 class="elementor-element elementor-element-6248457a elementor-widget elementor-widget-image"
-                                 data-element_type="widget" data-id="6248457a" data-widget_type="image.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-image">
-                                       <a href="#">
-                                          <img alt="" class="attachment-full size-full wp-image-1450" decoding="async"
-                                             loading="lazy" style="position: absolute; top: -50px;"
-                                             src="./images/flower_top.svg"  />
-                                       </a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div
-                        class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-67cf0ad7"
-                        data-element_type="column" data-id="67cf0ad7">
-                        <div class="elementor-column-wrap elementor-element-populated">
-                           <div class="elementor-widget-wrap">
-                              
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
-            <!-- <section
-               class="elementor-section elementor-top-section elementor-element elementor-element-e219d00 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="e219d00"
-               style="background-color: #F4F0ED;">
-               <div class="elementor-background-overlay" style="background-color: #F4F0ED;">
-               </div>
-               <br><br>
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-row">
-                     <div
-                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7df6612"
-                        data-element_type="column" data-id="7df6612">
-                        <div class="elementor-column-wrap elementor-element-populated">
-                           <div class="elementor-widget-wrap">
-                              
-                              <div
-                                 class="elementor-element elementor-element-f408f0e animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="f408f0e"
-                                 data-settings='{"_animation":"fadeIn","_animation_delay":200}'
-                                 data-widget_type="heading.default">
-                                 <div class="elementor-widget-container">
-                                    <h4 class="elementor-heading-title elementor-size-default"
-                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
-                                       Together with their families
-                                    </h4>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-2612f91 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="2612f91"
-                                 data-settings='{"_animation":"fadeInUp","_animation_delay":1000}'
-                                 data-widget_type="heading.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-heading-title elementor-size-default ">
-                                       <img alt="" class="attachment-full size-full wp-image-2067" decoding="async"
-                                          height="152" loading="lazy" 
-                                          src="./images/saralis_and_alex.svg" width="1024" />
-                                       
-                                    </div>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-f408f0e animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="f408f0e"
-                                 data-settings='{"_animation":"fadeIn","_animation_delay":2000}'
-                                 data-widget_type="heading.default">
-                                 <div class="elementor-widget-container">
-                                    <h4 class="elementor-heading-title elementor-size-default"
-                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
-                                       Invite you to join their wedding celebration
-                                    </h4>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-b4dde1c elementor-invisible elementor-widget elementor-widget-image"
-                                 data-element_type="widget" data-id="b4dde1c"
-                                 data-settings='{"_animation":"fadeIn","_animation_delay":2500}'
-                                 data-widget_type="image.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-image">
-                                       <img alt="" class="attachment-medium_large size-medium_large wp-image-2069"
-                                          decoding="async" height="114" loading="lazy"
-                                          sizes="(max-width: 768px) 100vw, 768px"
-                                          src="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-768x114.png"
-                                          srcset="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-768x114.png 768w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-300x45.png 300w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-600x89.png 600w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament.png 1024w"
-                                          width="768" />
-                                    </div>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-f408f0e animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="f408f0e"
-                                 data-settings='{"_animation":"fadeIn","_animation_delay":3000}'
-                                 data-widget_type="heading.default"
-                                 style="padding-top:16px">
-                                 <div class="elementor-widget-container">
-                                    <h4 class="elementor-heading-title elementor-size-default"
-                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
-                                       Saturday
-                                    </h4>
-                                 </div>
-                              </div>
-                              <div class="elementor-element elementor-element-f408f0e animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="f408f0e"
-                                 data-settings='{"_animation":"fadeIn","_animation_delay":3000}'
-                                 data-widget_type="heading.default">
-                                 <div class="elementor-widget-container">
-                                    <h4 class="custom-font-size elementor-heading-title elementor-size-default "
-                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
-                                       September 9, 2023
-                                    </h4>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-f408f0e animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="f408f0e"
-                                 data-settings='{"_animation":"fadeIn","_animation_delay":3000}'
-                                 data-widget_type="heading.default">
-                                 <div class="elementor-widget-container">
-                                    <h2 class="elementor-heading-title elementor-size-default"
-                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
-                                       El Paso, Texas
-                                    </h2>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <br><br><br>
-               <div class="elementor-image">
-               <img alt="" class="attachment-full size-full wp-image-1450" decoding="async"
-                                             loading="lazy" style="position: absolute; bottom: 0; right: 16px;"
-                                             src="./images/flowers_bottom.svg" width="160px" />
-                                          </div>
-                     
-            </section> -->
             
-            <!-- Count down sections -->
-            <!-- <section
-               class="elementor-section elementor-top-section elementor-element elementor-element-b69cca6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="b69cca6" data-settings='{"background_background":"classic"}'
-               style="background-color: #FFF"
-               id = "details">
-
+            
+            <!-- Image Separator -->
+            <section
+               class="elementor-section elementor-top-section elementor-element elementor-element-98171d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default animated-slow "
+               data-element_type="section" data-id="98171d2"
+               data-settings='{"background_background"}' >
+               <div style="z-index: 500; background-color:#000000"></div>
+               <!-- ':"classic","background_motion_fx_translateY_speed":{"unit":"px","size":3,"sizes":[]},"background_motion_fx_motion_fx_scrolling":"yes","background_motion_fx_translateY_effect":"yes","background_motion_fx_translateY_affectedRange":{"unit":"%","size":"","sizes":{"start":0,"end":1000}},"background_motion_fx_devices":["desktop","tablet","mobile"]}'> -->
+               <img alt="" class="top-flower" decoding="async" loading="lazy" src="./images/flower_top.svg"/>
+               <div class="elementor-background-overlay">
+                  
+               </div>
+               
                <div class="elementor-container elementor-column-gap-default">
                   <div class="elementor-row">
                      <div
-                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1766926"
-                        data-element_type="column" data-id="1766926">
+                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5d7bca2"
+                        data-element_type="column" data-id="5d7bca2">
+                        <div class="elementor-column-wrap elementor-element-populated">
+                           <div class="elementor-widget-wrap">
+                              
+							<div
+							class="elementor-element elementor-element-f408f0e animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+							data-element_type="widget" data-id="f408f0e"
+							data-settings='{"_animation":"fadeIn","_animation_delay":500}'
+							data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+                        <img src="images/rsvp.svg" alt="" class = "cocktail_dinner_image"/>
+							   <!-- <h4 class="elementor-heading-title elementor-size-default custom-font-size-rsvp"
+								  style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: #FFF">
+								  RSVP
+							   </h4> -->
+							</div>
+						 </div>
+						 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <img alt="" class="bottom-flower" decoding="async" loading="lazy" src="./images/flowers_bottom.svg"/>
+            </section>
+
+
+            <!-- RSVP -->
+            <section
+               class="elementor-section elementor-top-section elementor-element elementor-element-7f068da elementor-section-boxed elementor-section-height-default elementor-section-height-default animated-slow elementor-invisible"
+               data-element_type="section" data-id="7f068da" id="rsvp" data-settings='{"background_background":"classic","_animation":"fadeIn","_animation_delay":1000}'>
+               <div class="elementor-background-overlay">
+               </div>
+               <div class="elementor-container elementor-column-gap-default">
+                  <div class="elementor-row">
+                     <div
+                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7a78d69"
+                        data-element_type="column" data-id="7a78d69"
+                        data-settings='{"background_background":"gradient"}'>
                         <div class="elementor-column-wrap elementor-element-populated">
                            <div class="elementor-widget-wrap">
                               <div
-                                 class="elementor-element elementor-element-a4a6792 elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="a4a6792" data-widget_type="heading.default">
+                                 class="elementor-element elementor-element-3053d63 elementor-widget elementor-widget-heading"
+                                 data-element_type="widget" data-id="3053d63" data-widget_type="heading.default">
                                  <div class="elementor-widget-container">
                                     <h2 class="elementor-heading-title elementor-size-default"
-                                    style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
-                                       We Are Getting Married
+                                    style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100,100,100)">
+                                       PLEASE JOIN US
                                     </h2>
+                                    <img src="images/cocktails_and_dinner.svg" alt="" class = "cocktail_dinner_image"/>
                                  </div>
                               </div>
                               <div
-                                 class="elementor-element elementor-element-2511c6b elementor-widget elementor-widget-image"
-                                 data-element_type="widget" data-id="2511c6b" data-widget_type="image.default">
+                                 class="elementor-element elementor-element-6b652f5 elementor-widget elementor-widget-image"
+                                 data-element_type="widget" data-id="6b652f5" data-widget_type="image.default">
                                  <div class="elementor-widget-container">
                                     <div class="elementor-image">
                                        <img alt="" class="attachment-medium_large size-medium_large wp-image-2069"
@@ -1047,24 +1024,47 @@
                                      <div class="elementor-column  elementor-inner-column elementor-element elementor-element-38c03eb" data-id="38c03eb" data-element_type="column">
                                        <div class="elementor-column-wrap elementor-element-populated">
                                          <div class="elementor-widget-wrap">
-                                           <div class="elementor-element elementor-element-13e7357 elementor-widget elementor-widget-heading" data-id="13e7357" data-element_type="widget" data-widget_type="heading.default">
-                                             <div class="elementor-widget-container">
-                                               <h3 class="elementor-heading-title elementor-size-default"
-                                               style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
-                                               Wedding Ceremony 
-                                               </h3>
-                                             </div>
-                                           </div>
+
                                            <div class="elementor-element elementor-element-c1c8230 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1c8230" data-element_type="widget" data-widget_type="icon-list.default">
-                                             <div class="elementor-widget-container">
-                                                <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 2px;">OUR LADY OF MOUNT CARMEL </p>
-                                               <ul class="elementor-icon-list-items">
-                                                 <li class="elementor-icon-list-item">
-                                                   <span class="elementor-icon-list-icon">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="fill:none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                             <div class="elementor-widget-container ">
+                                                <p class="itinerary-align" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 12px;"><a href="https://goo.gl/maps/AY7U96wtS8JvtCpy8" style="text-decoration: none; color: rgb(100, 100, 100);" >EPIC RAILYARD</a></p>
+                                               <ul class="elementor-icon-list-items" >
+                                                <li class="elementor-icon-list-item location-list-item">
+                                                   <span class="elementor-icon-list-icon location-icon" >
+                                                      <svg style=" fill:#b15026" version="1.1" id="Layer_1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                                            viewBox="0 0 511.999 511.999" xml:space="preserve">
+                                                         <g>
+                                                            <g>
+                                                               <path d="M372.035,165.048l12.63-12.63c34.822-34.821,34.822-91.482,0-126.303c-34.82-34.821-91.479-34.821-126.302,0
+                                                                  l-12.631,12.63l51.966,51.966l-16.416,16.417h-49.077V55.893L152.803,2.957l-19.815,29.723l63.493,42.329v32.119h-47.632v17.862
+                                                                  c0,30.25-8.703,40.782-19.723,54.114c-12.433,15.046-27.909,33.771-27.909,76.873c0,69.457,51.979,126.997,119.079,135.777v84.52
+                                                                  h-53.586v35.724h142.895v-35.724h-53.586v-84.52c67.1-8.78,119.079-66.32,119.079-135.777c0-43.102-15.476-61.827-27.91-76.873
+                                                                  c-11.018-13.332-19.722-23.865-19.722-54.114v-4.51L372.035,165.048z M183.586,142.853h109.146
+                                                                  c1.766,15.104,5.738,26.509,10.572,35.724h-130.29C177.849,169.363,181.821,157.957,183.586,142.853z M329.156,214.301
+                                                                  c6.127,9.461,10.221,20.932,10.221,41.678c0,55.811-45.406,101.218-101.218,101.218S136.942,311.79,136.942,255.979
+                                                                  c0-20.746,4.094-32.217,10.221-41.678H329.156z M298.418,40.91c19.916-9.487,44.524-5.999,60.988,10.466
+                                                                  c16.468,16.467,19.955,41.073,10.466,60.988L298.418,40.91z"/>
+                                                            </g>
+                                                         </g>
+                                                         </svg>
                                                    </span>
-                                                   <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">September 9, 2023</span>
+                                                   <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100);">
+                                                      5:30 PM - 6:30 PM
+                                                   </span>
                                                  </li>
+                                                 <li class="elementor-icon-list-item" >
+                                                   <span class="elementor-icon-list-icon">
+                                                      <svg style=" fill:none" width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                                         <path d="M11 8V3C11 2.44772 10.5523 2 10 2H3C2.44772 2 2 2.44772 2 3V8C2 10.2091 3.79086 12 6 12H7C9.20914 12 11 10.2091 11 8Z" stroke="#b15026" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                         <path d="M15 16V2H18C20.2091 2 22 3.79086 22 6V16H18" stroke="#b15026" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                         <path d="M15 16V21C15 21.5523 15.4477 22 16 22H17C17.5523 22 18 21.5523 18 21V16" stroke="#b15026" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                         <path d="M5 12V21C5 21.5523 5.44772 22 6 22H7C7.55228 22 8 21.5523 8 21V12" stroke="#b15026" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                         <path d="M5 6L5 2" stroke="#b15026" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                         <path d="M8 6L8 2" stroke="#b15026" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                         </svg>
+                                                   </span>
+                                                   <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">6:30 PM - 8:30 PM</span>
+                                                 <!-- </li>
                                                  <li class="elementor-icon-list-item">
                                                    <span class="elementor-icon-list-icon">
                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock" style="fill:none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
@@ -1072,31 +1072,20 @@
                                                    <span class="elementor-icon-list-text"
                                                    style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
                                                    2 PM - 3 PM</span>
-                                                 </li>
-                                                 <li class="elementor-icon-list-item" style="align-items: flex-start">
-                                                   <span class="elementor-icon-list-icon" style="margin-top: 5px;">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin" style=" fill:none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                                   
-                                                   </span>
-                                                   <a href="https://goo.gl/maps/AY7U96wtS8JvtCpy8" style="text-decoration: none;">
-                                                      <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100);">
-                                                        131 S Zaragoza Rd<br>El Paso, Texas 79907
-                                                      </span>
-                                                    </a>
-                                                    
-                                                 </li>
+                                                 </li> -->
+                                                 
                                                </ul>
                                              </div>
                                            </div>
                                          </div>
                                        </div>
                                      </div>
-                                     <div class="elementor-column  elementor-inner-column elementor-element elementor-element-38c03eb" data-id="38c03eb" data-element_type="column">
+                                     <!-- <div class="elementor-column  elementor-inner-column elementor-element elementor-element-38c03eb" data-id="38c03eb" data-element_type="column">
                                        <div class="elementor-column-wrap elementor-element-populated">
                                          <div class="elementor-widget-wrap">
                                            <div class="elementor-element elementor-element-13e7357 elementor-widget elementor-widget-heading" data-id="13e7357" data-element_type="widget" data-widget_type="heading.default">
-                                             <div class="elementor-widget-container">
-                                               <h3 class="elementor-heading-title elementor-size-default"
+                                             <div class="elementor-widget-container itinerary-align">
+                                               <h3 class="elementor-heading-title elementor-size-default custom-font-size-itinerary"
                                                style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
                                                Wedding Reception
                                                </h3>
@@ -1104,551 +1093,152 @@
                                            </div>
                                            <div class="elementor-element elementor-element-c1c8230 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1c8230" data-element_type="widget" data-widget_type="icon-list.default">
                                              <div class="elementor-widget-container">
-                                                <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 2px;">EPIC RAILYARD</p>
+                                                <p class="itinerary-align" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 12px;">EPIC RAILYARD</p>
                                                <ul class="elementor-icon-list-items">
+                                                <li class="elementor-icon-list-item location-list-item">
+                                                   <span class="elementor-icon-list-icon location-icon">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin" style=" fill:none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                   </span>
+                                                   <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100);">
+                                                      <a href="https://goo.gl/maps/dfy1j9gSeBWEEUcF8" style="text-decoration: none !important;color: rgb(100, 100, 100);">2201 E Mills Ave<br>El Paso, Texas 79901</a>
+                                                   </span>
+                                                 </li>
                                                  <li class="elementor-icon-list-item">
                                                    <span class="elementor-icon-list-icon">
                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="fill:none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                                                    </span>
                                                    <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">September 9, 2023</span>
                                                  </li>
-                                                 <li class="elementor-icon-list-item">
+                                                 <li class="elementor-icon-list-item location-list-item">
                                                    <span class="elementor-icon-list-icon">
                                                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock" style="fill:none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                                                    </span>
+                                                   <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); ">COCKTAIL HOUR</p>
                                                    <span class="elementor-icon-list-text"
                                                    style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
-                                                   9 PM - 1 AM</span>
+                                                   5:30 PM - 6:30 PM</span>
+                                                   <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); ">DINNER</p>
+                                                   <span class="elementor-icon-list-text"
+                                                   style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                                   6:30 PM - 8:30 PM</span>
+                                                   <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); ">DANCE</p>
+                                                   <span class="elementor-icon-list-text"
+                                                   style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                                   9:00 PM - 1:00 AM</span>
                                                  </li>
-                                                 <li class="elementor-icon-list-item" style="align-items: flex-start">
-                                                   <span class="elementor-icon-list-icon" style="margin-top: 5px;">
-                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin" style=" fill:none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                                   
-                                                   </span>
-                                                   <a href="https://goo.gl/maps/dfy1j9gSeBWEEUcF8" style="text-decoration: none;">
-                                                      <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100);">
-                                                        2201 E Mills Ave<br>El Paso, Texas 79901
-                                                      </span>
-                                                    </a>
-                                                    
-                                                 </li>
+                                                 
                                                </ul>
                                              </div>
                                            </div>
                                          </div>
                                        </div>
-                                     </div>
+                                     </div> -->
+                                    
                                    </div>
                                  </div>
                                </section>
-                              <div
-                                 class="elementor-element elementor-element-f408f0e elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="f408f0e"
-                                 
-                                 data-widget_type="heading.default">
-                                 <div class="elementor-widget-container">
-                                    <h4 class="elementor-heading-title elementor-size-default"
-                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100)">
-                                       The adventure of a lifetime begins in:
-                                    </h4>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-82d918f elementor-countdown--label-block elementor-widget elementor-widget-countdown"
-                                 data-element_type="widget" data-id="82d918f" data-widget_type="countdown.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-countdown-wrapper" id="countdown-wrapper">
-                                       <div class="elementor-countdown-item">
-                                          <span class="elementor-countdown-digits elementor-countdown-days"
-                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
-                                          </span>
-                                          <span class="elementor-countdown-label" 
-                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
-                                             Days
-                                          </span>
-                                       </div>
-                                       <div class="elementor-countdown-item">
-                                          <span class="elementor-countdown-digits elementor-countdown-hours"
-                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
-                                          </span>
-                                          <span class="elementor-countdown-label"
-                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
-                                             Hours
-                                          </span>
-                                       </div>
-                                       
-                                    </div>
-                                 </div>
-                              </div>
-
-                              
-
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
-
-            <!-- Our story sections -->
-            <!-- <section
-               class="elementor-section elementor-top-section elementor-element elementor-element-0bec20d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="0bec20d" id="our_story">
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-row">
-                     <div
-                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8df9d1c"
-                        data-element_type="column" data-id="8df9d1c">
-                        <div class="elementor-column-wrap elementor-element-populated">
-                           <div class="elementor-widget-wrap">
-                              <div
-                                 class="elementor-element elementor-element-a4a6792 elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="a4a6792" data-widget_type="heading.default">
-                                 <div class="elementor-widget-container">
-                                    <h2 class="elementor-heading-title elementor-size-default"
-                                    style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
-                                       Our Love Story
-                                    </h2>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-0026e87 elementor-widget elementor-widget-image"
-                                 data-element_type="widget" data-id="0026e87" data-widget_type="image.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-image">
-                                       <img alt="" class="attachment-medium_large size-medium_large wp-image-2069"
-                                          decoding="async" height="114" loading="lazy"
-                                          sizes="(max-width: 768px) 100vw, 768px"
-                                          src="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-768x114.png"
-                                          srcset="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-768x114.png 768w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-300x45.png 300w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-600x89.png 600w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament.png 1024w"
-                                          width="768" />
-                                    </div>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-7de9e2f elementor-widget elementor-widget-text-editor"
-                                 data-element_type="widget" data-id="7de9e2f" data-widget_type="text-editor.default">
+                              <!-- <div
+                                 class="elementor-element elementor-element-8b8c639 elementor-widget elementor-widget-text-editor"
+                                 data-element_type="widget" data-id="8b8c639" data-widget_type="text-editor.default">
                                  <div class="elementor-widget-container">
                                     <div class="elementor-text-editor elementor-clearfix">
-                                       <p>
-                                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                                          ligula eget dolor.
-                                       </p>
+                                       We can’t wait to celebrate our special day with you.
                                     </div>
                                  </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> 
-            <section
-               class="elementor-section elementor-top-section elementor-element elementor-element-7ab67a6 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="7ab67a6">
-               <div class="elementor-container elementor-column-gap-no">
-                  <div class="elementor-row">
-                     <div
-                        class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0759be6"
-                        data-element_type="column" data-id="0759be6">
-                        <div class="elementor-column-wrap elementor-element-populated">
-                           <div class="elementor-widget-wrap">
-                              <section
-                                 class="elementor-section elementor-inner-section elementor-element elementor-element-49922a7 elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                 data-element_type="section" data-id="49922a7">
-                                 <div class="elementor-container elementor-column-gap-narrow">
-                                    <div class="elementor-row">
-                                       <div
-                                          class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-fdc8ed9"
-                                          data-element_type="column" data-id="fdc8ed9"
-                                          data-settings='{"background_background":"classic"}'>
-                                          <div class="elementor-column-wrap elementor-element-populated">
-                                             <div class="elementor-widget-wrap">
-                                                
-                                                <div
-                                                   class="elementor-element elementor-element-c751b1f elementor-widget elementor-widget-heading"
-                                                   data-element_type="widget" data-id="c751b1f"
-                                                   data-widget_type="heading.default">
-                                                   <div class="elementor-widget-container">
-                                                      <h3 class="elementor-heading-title elementor-size-default">
-                                                         Saralis Gamboa
-                                                      </h3>
-                                                   </div>
+                              </div> -->
+                              <div
+                                 class="elementor-element elementor-element-d8603e4 elementor-button-align-stretch elementor-widget elementor-widget-form"
+                                 data-element_type="widget" data-id="d8603e4"
+                                 data-settings='{"step_next_label":"Next","step_previous_label":"Previous","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}'
+                                 data-widget_type="form.default">
+                                 <div class="elementor-widget-container">
+                                    <form class="elementor-form" method="post" name="New Form">
+                                       <input name="post_id" type="hidden" value="4" />
+                                       <input name="form_id" type="hidden" value="d8603e4" />
+                                       <input name="referer_title" type="hidden" value="" />
+                                       <input name="queried_id" type="hidden" value="4" />
+                                       <div class="elementor-form-fields-wrapper elementor-labels-">
+                                          <div
+                                             class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-sm-100">
+                                             <input class="elementor-field elementor-size-sm elementor-field-textual"
+                                                id="form-field-name" name="form_fields[name]" placeholder="Your name"
+                                                size="1" type="text" />
+                                          </div>
+                                          <div
+                                             class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-sm-100 elementor-field-required">
+                                             <input aria-required="true"
+                                                class="elementor-field elementor-size-sm elementor-field-textual"
+                                                id="form-field-email" name="form_fields[email]" placeholder="Your email"
+                                                required="required" size="1" type="email" />
+                                          </div>
+                                          <div
+                                             class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-message elementor-col-50">
+                                             <div class="elementor-field elementor-select-wrapper remove-before">
+                                                <div class="select-caret-down-wrapper">
+                                                   <i aria-hidden="true" class="eicon-caret-down">
+                                                   </i>
                                                 </div>
-                                                <div
-                                                   class="elementor-element elementor-element-13eb250 elementor-widget elementor-widget-text-editor"
-                                                   data-element_type="widget" data-id="13eb250"
-                                                   data-widget_type="text-editor.default">
-                                                   <div class="elementor-widget-container">
-                                                      <div class="elementor-text-editor elementor-clearfix">
-                                                         September 23, 1995
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div
-                                                   class="elementor-element elementor-element-5774898 elementor-widget elementor-widget-text-editor"
-                                                   data-element_type="widget" data-id="5774898"
-                                                   data-widget_type="text-editor.default">
-                                                   <div class="elementor-widget-container">
-                                                      <div class="elementor-text-editor elementor-clearfix">
-                                                         Accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                                         praesentium voluptatum deleniti
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                
+                                                <select class="elementor-field-textual elementor-size-sm"
+                                                   id="form-field-message" name="form_fields[message]">
+                                                   <option value="1 Guest">
+                                                      1 Guest
+                                                   </option>
+                                                   <option value="2 Guest">
+                                                      2 Guest
+                                                   </option>
+                                                   <option value="3 Guest">
+                                                      3 Guest
+                                                   </option>
+                                                   <option value="4 Guest">
+                                                      4 Guest
+                                                   </option>
+                                                   <option value="5 Guest">
+                                                      5 Guest
+                                                   </option>
+                                                </select>
                                              </div>
+                                          </div>
+                                          <div
+                                             class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_3 elementor-col-50">
+                                             <div class="elementor-field elementor-select-wrapper remove-before">
+                                                <div class="select-caret-down-wrapper">
+                                                   <i aria-hidden="true" class="eicon-caret-down">
+                                                   </i>
+                                                </div>
+                                                <select class="elementor-field-textual elementor-size-sm"
+                                                   id="form-field-field_3" name="form_fields[field_3]">
+                                                   <option value="Yes, I will be there ">
+                                                      Yes, I will be there
+                                                   </option>
+                                                   <option value="Sorry, I can't come">
+                                                      Sorry, I can't come
+                                                   </option>
+                                                </select>
+                                             </div>
+                                          </div>
+                                          <div
+                                             class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-field_1 elementor-col-100 elementor-field-required">
+                                             <textarea aria-required="true"
+                                                class="elementor-field-textual elementor-field elementor-size-sm"
+                                                id="form-field-field_1" name="form_fields[field_1]"
+                                                placeholder="Something you say" required="required" rows="4"></textarea>
+                                          </div>
+                                          <div
+                                             class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                                             <button class="elementor-button elementor-size-lg" type="submit">
+                                                <span>
+                                                   <span class="elementor-button-icon">
+                                                   </span>
+                                                   <span class="elementor-button-text">
+                                                      Attend
+                                                   </span>
+                                                </span>
+                                             </button>
                                           </div>
                                        </div>
-                                       <div
-                                          class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-84f7086"
-                                          data-element_type="column" data-id="84f7086">
-                                          <div class="elementor-column-wrap elementor-element-populated">
-                                             <div class="elementor-widget-wrap">
-                                                <div
-                                                   class="elementor-element elementor-element-ea7e0df elementor-widget elementor-widget-image"
-                                                   data-element_type="widget" data-id="ea7e0df"
-                                                   data-widget_type="image.default">
-                                                   <div class="elementor-widget-container">
-                                                      <div class="elementor-image">
-                                                         <img alt="" class="attachment-full size-full wp-image-1623"
-                                                            decoding="async" height="1434" loading="lazy"
-                                                            src="https://saralissaidyes.com/images/us.jpeg"
-                                                            width="1024" />
-                                                         </div>
-                                                   </div>
-                                                </div>
-                                                <div
-                                                   class="elementor-element elementor-element-942ba9e elementor-align-right elementor-absolute elementor-hidden-phone elementor-widget elementor-widget-button"
-                                                   data-element_type="widget" data-id="942ba9e"
-                                                   data-settings='{"_position":"absolute"}'
-                                                   data-widget_type="button.default">
-                                                   <div class="elementor-widget-container">
-                                                      <div class="elementor-button-wrapper">
-                                                         <a class="elementor-button-link elementor-button elementor-size-sm"
-                                                            href="#" role="button">
-                                                            <span class="elementor-button-content-wrapper">
-                                                               <span class="elementor-button-text">
-                                                                  &amp;
-                                                               </span>
-                                                            </span>
-                                                         </a>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </section>
-                           </div>
-                        </div>
-                     </div>
-                     <div
-                        class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6385223"
-                        data-element_type="column" data-id="6385223">
-                        <div class="elementor-column-wrap elementor-element-populated">
-                           <div class="elementor-widget-wrap">
-                              <section
-                                 class="elementor-section elementor-inner-section elementor-element elementor-element-7a087d9 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                 data-element_type="section" data-id="7a087d9">
-                                 <div class="elementor-container elementor-column-gap-narrow">
-                                    <div class="elementor-row">
-                                       <div
-                                          class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e0a1508"
-                                          data-element_type="column" data-id="e0a1508">
-                                          <div class="elementor-column-wrap elementor-element-populated">
-                                             <div class="elementor-widget-wrap">
-                                                <div
-                                                   class="elementor-element elementor-element-1d7c426 elementor-widget elementor-widget-image"
-                                                   data-element_type="widget" data-id="1d7c426"
-                                                   data-widget_type="image.default">
-                                                   <div class="elementor-widget-container">
-                                                      <div class="elementor-image">
-                                                          <img alt="" class="attachment-full size-full wp-image-1623"
-                                                            decoding="async" height="1434" loading="lazy"
-                                                            src="https://saralissaidyes.com/images/us.jpeg"
-                                                            width="1024" />
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div
-                                          class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-16da009"
-                                          data-element_type="column" data-id="16da009"
-                                          data-settings='{"background_background":"classic"}'>
-                                          <div class="elementor-column-wrap elementor-element-populated">
-                                             <div class="elementor-widget-wrap">
-                                                
-                                                <div
-                                                   class="elementor-element elementor-element-b7aa68b elementor-widget elementor-widget-heading"
-                                                   data-element_type="widget" data-id="b7aa68b"
-                                                   data-widget_type="heading.default">
-                                                   <div class="elementor-widget-container">
-                                                      <h3 class="elementor-heading-title elementor-size-default">
-                                                         Alexandro Arnal
-                                                      </h3>
-                                                   </div>
-                                                </div>
-                                                <div
-                                                   class="elementor-element elementor-element-97ce8cb elementor-widget elementor-widget-text-editor"
-                                                   data-element_type="widget" data-id="97ce8cb"
-                                                   data-widget_type="text-editor.default">
-                                                   <div class="elementor-widget-container">
-                                                      <div class="elementor-text-editor elementor-clearfix">
-                                                         May 11, 1995
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                <div
-                                                   class="elementor-element elementor-element-e7e315c elementor-widget elementor-widget-text-editor"
-                                                   data-element_type="widget" data-id="e7e315c"
-                                                   data-widget_type="text-editor.default">
-                                                   <div class="elementor-widget-container">
-                                                      <div class="elementor-text-editor elementor-clearfix">
-                                                         Accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                                         praesentium voluptatum deleniti
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                                
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </section>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
-
-            <!-- Gallery -->
-            <!-- <section
-               class="elementor-section elementor-top-section elementor-element elementor-element-1dd33da elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-               data-element_type="section" data-id="1dd33da" id="gallery" data-settings='{"background_background":"classic"}'>
-               <div class="elementor-background-overlay">
-               </div>
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-row">
-                     <div
-                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e265ffa"
-                        data-element_type="column" data-id="e265ffa">
-                        <div class="elementor-column-wrap elementor-element-populated">
-                           <div class="elementor-widget-wrap">
-                              <div
-                                 class="elementor-element elementor-element-2d3d6ec elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="2d3d6ec" data-widget_type="heading.default">
-                                 <div class="elementor-widget-container">
-                                    <h2 class="elementor-heading-title elementor-size-default">
-                                       Captured Moments
-                                    </h2>
+                                    </form>
                                  </div>
                               </div>
-                              <div
-                                 class="elementor-element elementor-element-2916d28 elementor-widget elementor-widget-image"
-                                 data-element_type="widget" data-id="2916d28" data-widget_type="image.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-image">
-                                       <img alt="" class="attachment-medium_large size-medium_large wp-image-2069"
-                                          decoding="async" height="114" loading="lazy"
-                                          sizes="(max-width: 768px) 100vw, 768px"
-                                          src="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-768x114.png"
-                                          srcset="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-768x114.png 768w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-300x45.png 300w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament-600x89.png 600w, https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/ornament.png 1024w"
-                                          width="768" />
-                                    </div>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-946df3c elementor-widget elementor-widget-text-editor"
-                                 data-element_type="widget" data-id="946df3c" data-widget_type="text-editor.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-text-editor elementor-clearfix">
-                                       <p>
-                                          Aenean commodo ligula eget dolor.
-                                       </p>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-4ec21d2 elementor-widget elementor-widget-gallery"
-                                 data-element_type="widget" data-id="4ec21d2"
-                                 data-settings='{"columns":3,"gap":{"unit":"px","size":40,"sizes":[]},"gallery_layout":"masonry","columns_tablet":3,"gap_tablet":{"unit":"px","size":20,"sizes":[]},"overlay_title":"caption","image_hover_animation":"grow","lazyload":"yes","columns_mobile":1,"gap_mobile":{"unit":"px","size":10,"sizes":[]},"link_to":"file","overlay_background":"yes","content_hover_animation":"fade-in"}'
-                                 data-widget_type="gallery.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-gallery__container">
-                                       <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                          data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTY1NywidXJsIjoiaHR0cHM6XC9cL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbVwvcm9iYmllLWFuZC1tYWdpZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzVcLzIwMjBcLzA3XC9oYW5kc29tZS15b3VuZy1ncm9vbS1QOFBLVzdBLWdhbGxlcnkuanBnIiwic2xpZGVzaG93IjoiYWxsLTRlYzIxZDIifQ%3D%3D"
-                                          data-elementor-lightbox-slideshow="all-4ec21d2"
-                                          data-elementor-lightbox-title="handsome-young-groom-P8PKW7A-gallery"
-                                          data-elementor-open-lightbox="yes"
-                                          href="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/handsome-young-groom-P8PKW7A-gallery.jpg">
-                                          <div aria-label="" class="e-gallery-image elementor-gallery-item__image"
-                                             data-height="1920"
-                                             data-thumbnail="https://saralissaidyes.com/images/us.jpeg"
-                                             data-width="1280" role="img">
-                                          </div>
-                                          <div class="elementor-gallery-item__overlay">
-                                          </div>
-                                          <div class="elementor-gallery-item__content">
-                                             <div class="elementor-gallery-item__title">
-                                                Handsome Young Groom
-                                             </div>
-                                          </div>
-                                       </a>
-                                       <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                          data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTY1MiwidXJsIjoiaHR0cHM6XC9cL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbVwvcm9iYmllLWFuZC1tYWdpZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzVcLzIwMjBcLzA3XC9iZWF1dGlmdWwtYnJpZGUtYW5kLWdyb29tLWF0LXN1bnNldC1pbi1ncmVlbi1uYXR1ci1QRzNISDY1LWdhbGxlcnkuanBnIiwic2xpZGVzaG93IjoiYWxsLTRlYzIxZDIifQ%3D%3D"
-                                          data-elementor-lightbox-slideshow="all-4ec21d2"
-                                          data-elementor-lightbox-title="beautiful-bride-and-groom-at-sunset-in-green-natur-PG3HH65-gallery"
-                                          data-elementor-open-lightbox="yes"
-                                          href="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/beautiful-bride-and-groom-at-sunset-in-green-natur-PG3HH65-gallery.jpg">
-                                          <div aria-label="" class="e-gallery-image elementor-gallery-item__image"
-                                             data-height="1280"
-                                             data-thumbnail="https://saralissaidyes.com/images/us.jpeg"
-                                             data-width="1920" role="img">
-                                          </div>
-                                          <div class="elementor-gallery-item__overlay">
-                                          </div>
-                                          <div class="elementor-gallery-item__content">
-                                             <div class="elementor-gallery-item__title">
-                                                Beautiful Bride &amp; Groom at sunset
-                                             </div>
-                                          </div>
-                                       </a>
-                                       <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                          data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTY1MSwidXJsIjoiaHR0cHM6XC9cL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbVwvcm9iYmllLWFuZC1tYWdpZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzVcLzIwMjBcLzA3XC9iZWF1dGlmdWwtYnJpZGUtYW5kLWdyb29tLWF0LXN1bnNldC1pbi1ncmVlbi1uYXR1ci1QOFZOWlNNLWdhbGxlcnktZTE1OTU3MzU0NTQzMjQuanBnIiwic2xpZGVzaG93IjoiYWxsLTRlYzIxZDIifQ%3D%3D"
-                                          data-elementor-lightbox-slideshow="all-4ec21d2"
-                                          data-elementor-lightbox-title="beautiful-bride-and-groom-at-sunset-in-green-natur-P8VNZSM-gallery"
-                                          data-elementor-open-lightbox="yes"
-                                          href="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/beautiful-bride-and-groom-at-sunset-in-green-natur-P8VNZSM-gallery-e1595735454324.jpg">
-                                          <div aria-label="" class="e-gallery-image elementor-gallery-item__image"
-                                             data-height="1536"
-                                             data-thumbnail="https://saralissaidyes.com/images/us.jpeg"
-                                             data-width="1024" role="img">
-                                          </div>
-                                          <div class="elementor-gallery-item__overlay">
-                                          </div>
-                                          <div class="elementor-gallery-item__content">
-                                             <div class="elementor-gallery-item__title">
-                                                Beautiful Bride &amp; Groom at sunset
-                                             </div>
-                                          </div>
-                                       </a>
-                                       <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                          data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTY1MywidXJsIjoiaHR0cHM6XC9cL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbVwvcm9iYmllLWFuZC1tYWdpZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzVcLzIwMjBcLzA3XC9iZWF1dGlmdWwtYnJpZGUtYW5kLWdyb29tLWluLWdyZWVuLW5hdHVyZS1QQUM3VDg5LWdhbGxlcnktZTE1OTU3MzU1NjI1MDYuanBnIiwic2xpZGVzaG93IjoiYWxsLTRlYzIxZDIifQ%3D%3D"
-                                          data-elementor-lightbox-slideshow="all-4ec21d2"
-                                          data-elementor-lightbox-title="beautiful-bride-and-groom-in-green-nature-PAC7T89-gallery"
-                                          data-elementor-open-lightbox="yes"
-                                          href="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/beautiful-bride-and-groom-in-green-nature-PAC7T89-gallery-e1595735562506.jpg">
-                                          <div aria-label="" class="e-gallery-image elementor-gallery-item__image"
-                                             data-height="1536"
-                                             data-thumbnail="https://saralissaidyes.com/images/us.jpeg"
-                                             data-width="1024" role="img">
-                                          </div>
-                                          <div class="elementor-gallery-item__overlay">
-                                          </div>
-                                          <div class="elementor-gallery-item__content">
-                                             <div class="elementor-gallery-item__title">
-                                                Beautiful Bride &amp; Groom at sunset
-                                             </div>
-                                          </div>
-                                       </a>
-                                       <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                          data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTY1NCwidXJsIjoiaHR0cHM6XC9cL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbVwvcm9iYmllLWFuZC1tYWdpZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzVcLzIwMjBcLzA3XC9iZWF1dGlmdWwtYnJpZGUtYW5kLWdyb29tLWluLWdyZWVuLW5hdHVyZS1QWkVLM1BTLWdhbGxlcnkuanBnIiwic2xpZGVzaG93IjoiYWxsLTRlYzIxZDIifQ%3D%3D"
-                                          data-elementor-lightbox-slideshow="all-4ec21d2"
-                                          data-elementor-lightbox-title="beautiful-bride-and-groom-in-green-nature-PZEK3PS-gallery"
-                                          data-elementor-open-lightbox="yes"
-                                          href="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/beautiful-bride-and-groom-in-green-nature-PZEK3PS-gallery.jpg">
-                                          <div aria-label="" class="e-gallery-image elementor-gallery-item__image"
-                                             data-height="1280"
-                                             data-thumbnail="https://saralissaidyes.com/images/us.jpeg"
-                                             data-width="1920" role="img">
-                                          </div>
-                                          <div class="elementor-gallery-item__overlay">
-                                          </div>
-                                          <div class="elementor-gallery-item__content">
-                                             <div class="elementor-gallery-item__title">
-                                                Beautiful Bride &amp; Groom at sunset
-                                             </div>
-                                          </div>
-                                       </a>
-                                       <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                          data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTY1NiwidXJsIjoiaHR0cHM6XC9cL3RlbXBsYXRla2l0LmplZ3RoZW1lLmNvbVwvcm9iYmllLWFuZC1tYWdpZVwvd3AtY29udGVudFwvdXBsb2Fkc1wvc2l0ZXNcLzVcLzIwMjBcLzA3XC9iZWF1dGlmdWwteW91bmctYnJpZGUtYXQtc3Vuc2V0LWluLWdyZWVuLW5hdHVyZS1QR1gzTEVTLWdhbGVyeS5qcGciLCJzbGlkZXNob3ciOiJhbGwtNGVjMjFkMiJ9"
-                                          data-elementor-lightbox-slideshow="all-4ec21d2"
-                                          data-elementor-lightbox-title="beautiful-young-bride-at-sunset-in-green-nature-PGX3LES-galery"
-                                          data-elementor-open-lightbox="yes"
-                                          href="https://templatekit.jegtheme.com/saralis_and_alex/wp-content/uploads/sites/5/2020/07/beautiful-young-bride-at-sunset-in-green-nature-PGX3LES-galery.jpg">
-                                          <div aria-label="" class="e-gallery-image elementor-gallery-item__image"
-                                             data-height="1280"
-                                             data-thumbnail="https://saralissaidyes.com/images/us.jpeg"
-                                             data-width="1920" role="img">
-                                          </div>
-                                          <div class="elementor-gallery-item__overlay">
-                                          </div>
-                                          <div class="elementor-gallery-item__content">
-                                             <div class="elementor-gallery-item__title">
-                                                Beautiful Young Bride
-                                             </div>
-                                          </div>
-                                       </a>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div
-                                 class="elementor-element elementor-element-582da3f elementor-align-center elementor-widget elementor-widget-button"
-                                 data-element_type="widget" data-id="582da3f" data-widget_type="button.default">
-                                 <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                       <a class="elementor-button-link elementor-button elementor-size-md" href="#"
-                                          role="button">
-                                          <span class="elementor-button-content-wrapper">
-                                             <span class="elementor-button-text">
-                                                View gallery
-                                             </span>
-                                          </span>
-                                       </a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section> -->
-
-            <!-- Image Separator -->
-            <section
-               class="elementor-section elementor-top-section elementor-element elementor-element-98171d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default animated-slow "
-               data-element_type="section" data-id="98171d2"
-               data-settings='{"background_background":"classic","background_motion_fx_translateY_speed":{"unit":"px","size":3,"sizes":[]},"background_motion_fx_motion_fx_scrolling":"yes","background_motion_fx_translateY_effect":"yes","background_motion_fx_translateY_affectedRange":{"unit":"%","size":"","sizes":{"start":0,"end":1000}},"background_motion_fx_devices":["desktop","tablet","mobile"]}'>
-               <div class="elementor-background-overlay">
-               </div>
-               <div class="elementor-container elementor-column-gap-default">
-                  <div class="elementor-row">
-                     <div
-                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5d7bca2"
-                        data-element_type="column" data-id="5d7bca2">
-                        <div class="elementor-column-wrap elementor-element-populated">
-                           <div class="elementor-widget-wrap">
-							<div
-							class="elementor-element elementor-element-f408f0e animated-slow elementor-invisible elementor-widget elementor-widget-heading"
-							data-element_type="widget" data-id="f408f0e"
-							data-settings='{"_animation":"fadeIn","_animation_delay":500}'
-							data-widget_type="heading.default">
-							<div class="elementor-widget-container">
-							   <h4 class="elementor-heading-title elementor-size-default custom-font-size-rsvp"
-								  style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: #FFF">
-								  RSVP
-							   </h4>
-							</div>
-						 </div>
-						 
                            </div>
                         </div>
                      </div>
@@ -1657,7 +1247,7 @@
             </section>
 
             <!-- Wedding Location -->
-            <!-- <section
+            <section
                class="elementor-section elementor-top-section elementor-element elementor-element-4339fab elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                data-element_type="section" data-id="4339fab" data-settings='{"background_background":"classic"}'>
                <div class="elementor-container elementor-column-gap-no">
@@ -1667,7 +1257,7 @@
                         data-element_type="column" data-id="d3a033e">
                         <div class="elementor-column-wrap elementor-element-populated">
                            <div class="elementor-widget-wrap">
-                              <section
+                              <!-- <section
                                  class="elementor-section elementor-inner-section elementor-element elementor-element-c35053d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                  data-element_type="section" data-id="c35053d">
                                  <div class="elementor-container elementor-column-gap-default">
@@ -1683,7 +1273,7 @@
                                                    data-widget_type="heading.default">
                                                    <div class="elementor-widget-container">
                                                       <h2 class="elementor-heading-title elementor-size-default">
-                                                         Wedding Location
+                                                         Reception Location
                                                       </h2>
                                                    </div>
                                                 </div>
@@ -1710,8 +1300,7 @@
                                                    <div class="elementor-widget-container">
                                                       <div class="elementor-text-editor elementor-clearfix">
                                                          <p>
-                                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                                            Aenean commodo ligula eget dolor.
+                                                            Join us for a night of food, drinks, and dancing.<br>Let's toast to love and happiness!
                                                          </p>
                                                       </div>
                                                    </div>
@@ -1721,16 +1310,14 @@
                                        </div>
                                     </div>
                                  </div>
-                              </section>
+                              </section> -->
                               <div
                                  class="elementor-element elementor-element-baa546a elementor-widget elementor-widget-google_maps"
                                  data-element_type="widget" data-id="baa546a" data-widget_type="google_maps.default">
                                  <div class="elementor-widget-container">
                                     <div class="elementor-custom-embed">
-                                       <iframe aria-label="Our Lady of Mount Carmel Church" loading="lazy"
-                                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.8989606540617!2d-106.326926!3d31.69133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e7438f3c0a6b31%3A0x4b4eee70999d45d0!2sOur%20Lady%20of%20Mount%20Carmel%20Church!5e0!3m2!1sen!2sus!4v1685945489406!5m2!1sen!2sus"
-                                          title="Our Lady of Mount Carmel Church">
-                                       </iframe>
+                                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.8831064637197!2d-106.46653859999999!3d31.773674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e759022ee8e173%3A0x17dd38afe432bdc5!2sEpic%20Railyard%20Event%20Center!5e0!3m2!1sen!2sus!4v1686877200513!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                       
                                     </div>
                                  </div>
                               </div>
@@ -1739,7 +1326,7 @@
                      </div>
                   </div>
                </div>
-            </section> -->
+            </section>
 
             <!-- Where to Stay -->
             <!-- <section
@@ -1985,33 +1572,35 @@
                </div>
             </section> -->
 
-            <!-- RSVP -->
+            
+            <!-- Itinerary -->
             <section
-               class="elementor-section elementor-top-section elementor-element elementor-element-7f068da elementor-section-boxed elementor-section-height-default elementor-section-height-default animated-slow elementor-invisible"
-               data-element_type="section" data-id="7f068da" id="rsvp" data-settings='{"background_background":"classic","_animation":"fadeIn","_animation_delay":1000}'>
-               <div class="elementor-background-overlay">
-               </div>
+               class="elementor-section elementor-top-section elementor-element elementor-element-b69cca6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+               data-element_type="section" data-id="b69cca6" data-settings='{"background_background":"classic"}'
+               style="background-color: #FFF"
+               id = "details">
+               <!-- data-settings='{"background_background":"slideshow","background_slideshow_gallery":[{"id":1626,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"},{"id":1629,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"},{"id":1625,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"},{"id":1247,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"},{"id":1274,"url":"https:\/\/saralissaidyes.com\/images\/us.jpeg"}],"background_slideshow_ken_burns":"yes","background_slideshow_loop":"yes","background_slideshow_slide_duration":5000,"background_slideshow_slide_transition":"fade","background_slideshow_transition_duration":500,"background_slideshow_ken_burns_zoom_direction":"in"}' -->
+
                <div class="elementor-container elementor-column-gap-default">
                   <div class="elementor-row">
                      <div
-                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7a78d69"
-                        data-element_type="column" data-id="7a78d69"
-                        data-settings='{"background_background":"gradient"}'>
+                        class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1766926"
+                        data-element_type="column" data-id="1766926">
                         <div class="elementor-column-wrap elementor-element-populated">
                            <div class="elementor-widget-wrap">
-                              <div
-                                 class="elementor-element elementor-element-3053d63 elementor-widget elementor-widget-heading"
-                                 data-element_type="widget" data-id="3053d63" data-widget_type="heading.default">
+                              <!-- <div
+                                 class="elementor-element elementor-element-a4a6792 elementor-widget elementor-widget-heading"
+                                 data-element_type="widget" data-id="a4a6792" data-widget_type="heading.default">
                                  <div class="elementor-widget-container">
                                     <h2 class="elementor-heading-title elementor-size-default"
-									style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100,100,100)">
-                                       You Are Invited
+                                    style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                       We Are Getting Married
                                     </h2>
                                  </div>
                               </div>
                               <div
-                                 class="elementor-element elementor-element-6b652f5 elementor-widget elementor-widget-image"
-                                 data-element_type="widget" data-id="6b652f5" data-widget_type="image.default">
+                                 class="elementor-element elementor-element-2511c6b elementor-widget elementor-widget-image"
+                                 data-element_type="widget" data-id="2511c6b" data-widget_type="image.default">
                                  <div class="elementor-widget-container">
                                     <div class="elementor-image">
                                        <img alt="" class="attachment-medium_large size-medium_large wp-image-2069"
@@ -2023,114 +1612,166 @@
                                     </div>
                                  </div>
                               </div>
+                              <section class="elementor-section elementor-inner-section elementor-element elementor-element-68674f4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="68674f4" data-element_type="section" style="padding-bottom: 36px;">
+                                 <div class="elementor-container elementor-column-gap-wide">
+                                   <div class="elementor-row">
+                                     
+                                     <div class="elementor-column  elementor-inner-column elementor-element elementor-element-38c03eb" data-id="38c03eb" data-element_type="column">
+                                       <div class="elementor-column-wrap elementor-element-populated">
+                                         <div class="elementor-widget-wrap">
+                                           <div class="elementor-element elementor-element-13e7357 elementor-widget elementor-widget-heading" data-id="13e7357" data-element_type="widget" data-widget_type="heading.default">
+                                             <div class="elementor-widget-container">
+                                               <h3 class="elementor-heading-title elementor-size-default custom-font-size-itinerary itinerary-align"
+                                               style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                                Wedding Ceremony 
+                                               </h3>
+                                             </div>
+                                           </div>
+                                           <div class="elementor-element elementor-element-c1c8230 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1c8230" data-element_type="widget" data-widget_type="icon-list.default">
+                                             <div class="elementor-widget-container ">
+                                                <p class="itinerary-align" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 12px;">OUR LADY OF MOUNT CARMEL </p>
+                                               <ul class="elementor-icon-list-items" >
+                                                <li class="elementor-icon-list-item location-list-item">
+                                                   <span class="elementor-icon-list-icon location-icon" >
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin" style=" fill:none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                   </span>
+                                                   <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100);">
+                                                      <a href="https://goo.gl/maps/AY7U96wtS8JvtCpy8" style="text-decoration: none; color: rgb(100, 100, 100);">131 S Zaragoza Rd<br>El Paso, Texas 79907</a>
+                                                   </span>
+                                                 </li>
+                                                 <li class="elementor-icon-list-item" >
+                                                   <span class="elementor-icon-list-icon">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="fill:none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                                   </span>
+                                                   <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">September 9, 2023</span>
+                                                 </li>
+                                                 <li class="elementor-icon-list-item">
+                                                   <span class="elementor-icon-list-icon">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock" style="fill:none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                                   </span>
+                                                   <span class="elementor-icon-list-text"
+                                                   style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                                   2 PM - 3 PM</span>
+                                                 </li>
+                                                 
+                                               </ul>
+                                             </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                     <div class="elementor-column  elementor-inner-column elementor-element elementor-element-38c03eb" data-id="38c03eb" data-element_type="column">
+                                       <div class="elementor-column-wrap elementor-element-populated">
+                                         <div class="elementor-widget-wrap">
+                                           <div class="elementor-element elementor-element-13e7357 elementor-widget elementor-widget-heading" data-id="13e7357" data-element_type="widget" data-widget_type="heading.default">
+                                             <div class="elementor-widget-container itinerary-align">
+                                               <h3 class="elementor-heading-title elementor-size-default custom-font-size-itinerary"
+                                               style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                               Wedding Reception
+                                               </h3>
+                                             </div>
+                                           </div>
+                                           <div class="elementor-element elementor-element-c1c8230 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1c8230" data-element_type="widget" data-widget_type="icon-list.default">
+                                             <div class="elementor-widget-container">
+                                                <p class="itinerary-align" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); margin-top:-12px; margin-bottom: 12px;">EPIC RAILYARD</p>
+                                               <ul class="elementor-icon-list-items">
+                                                <li class="elementor-icon-list-item location-list-item">
+                                                   <span class="elementor-icon-list-icon location-icon">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin" style=" fill:none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                                   </span>
+                                                   <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100);">
+                                                      <a href="https://goo.gl/maps/dfy1j9gSeBWEEUcF8" style="text-decoration: none !important;color: rgb(100, 100, 100);">2201 E Mills Ave<br>El Paso, Texas 79901</a>
+                                                   </span>
+                                                 </li>
+                                                 <li class="elementor-icon-list-item">
+                                                   <span class="elementor-icon-list-icon">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="fill:none"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                                   </span>
+                                                   <span class="elementor-icon-list-text" style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">September 9, 2023</span>
+                                                 </li>
+                                                 <li class="elementor-icon-list-item location-list-item">
+                                                   <span class="elementor-icon-list-icon">
+                                                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock" style="fill:none"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                                   </span>
+                                                   <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); ">COCKTAIL HOUR</p>
+                                                   <span class="elementor-icon-list-text"
+                                                   style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                                   5:30 PM - 6:30 PM</span>
+                                                   <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); ">DINNER</p>
+                                                   <span class="elementor-icon-list-text"
+                                                   style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                                   6:30 PM - 8:30 PM</span>
+                                                   <p style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100); ">DANCE</p>
+                                                   <span class="elementor-icon-list-text"
+                                                   style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                                   9:00 PM - 1:00 AM</span>
+                                                 </li>
+                                                 
+                                               </ul>
+                                             </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                    
+                                   </div>
+                                 </div>
+                               </section> -->
                               <div
-                                 class="elementor-element elementor-element-8b8c639 elementor-widget elementor-widget-text-editor"
-                                 data-element_type="widget" data-id="8b8c639" data-widget_type="text-editor.default">
+                                 class="elementor-element elementor-element-f408f0e elementor-widget elementor-widget-heading"
+                                 data-element_type="widget" data-id="f408f0e"
+                                 
+                                 data-widget_type="heading.default">
                                  <div class="elementor-widget-container">
-                                    <div class="elementor-text-editor elementor-clearfix">
-                                       We can’t wait to celebrate our special day with you.
+                                    <h4 class="elementor-heading-title elementor-size-default"
+                                       style="font-family: trajan-pro-3, serif; font-style: normal; font-weight: 200; color: rgb(100, 100, 100); font-size:16px">
+                                       The adventure of a lifetime begins in:
+                                    </h4>
+                                 </div>
+                              </div>
+                              <div
+                                 class="elementor-element elementor-element-82d918f elementor-countdown--label-block elementor-widget elementor-widget-countdown"
+                                 data-element_type="widget" data-id="82d918f" data-widget_type="countdown.default">
+                                 <div class="elementor-widget-container">
+                                    <div class="elementor-countdown-wrapper" id="countdown-wrapper">
+                                       <div class="elementor-countdown-item">
+                                          <span class="elementor-countdown-digits elementor-countdown-days"
+                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                          </span>
+                                          <span class="elementor-countdown-label" 
+                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                             Days
+                                          </span>
+                                       </div>
+                                       <div class="elementor-countdown-item">
+                                          <span class="elementor-countdown-digits elementor-countdown-hours"
+                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                          </span>
+                                          <span class="elementor-countdown-label"
+                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                             Hours
+                                          </span>
+                                       </div>
+                                       <div class="elementor-countdown-item">
+                                          <span class="elementor-countdown-digits elementor-countdown-minutes"
+                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                          </span>
+                                          <span class="elementor-countdown-label"
+                                          style="font-family: trajan-pro-3, serif; font-weight: 100; font-style: normal; color: rgb(100, 100, 100)">
+                                             Minutes
+                                          </span>
+                                       </div> 
                                     </div>
                                  </div>
                               </div>
-                              <div
-                                 class="elementor-element elementor-element-d8603e4 elementor-button-align-stretch elementor-widget elementor-widget-form"
-                                 data-element_type="widget" data-id="d8603e4"
-                                 data-settings='{"step_next_label":"Next","step_previous_label":"Previous","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}'
-                                 data-widget_type="form.default">
-                                 <div class="elementor-widget-container">
-                                    <form class="elementor-form" method="post" name="New Form">
-                                       <input name="post_id" type="hidden" value="4" />
-                                       <input name="form_id" type="hidden" value="d8603e4" />
-                                       <input name="referer_title" type="hidden" value="" />
-                                       <input name="queried_id" type="hidden" value="4" />
-                                       <div class="elementor-form-fields-wrapper elementor-labels-">
-                                          <div
-                                             class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-sm-100">
-                                             <input class="elementor-field elementor-size-sm elementor-field-textual"
-                                                id="form-field-name" name="form_fields[name]" placeholder="Your name"
-                                                size="1" type="text" />
-                                          </div>
-                                          <div
-                                             class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-sm-100 elementor-field-required">
-                                             <input aria-required="true"
-                                                class="elementor-field elementor-size-sm elementor-field-textual"
-                                                id="form-field-email" name="form_fields[email]" placeholder="Your email"
-                                                required="required" size="1" type="email" />
-                                          </div>
-                                          <div
-                                             class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-message elementor-col-50">
-                                             <div class="elementor-field elementor-select-wrapper remove-before">
-                                                <div class="select-caret-down-wrapper">
-                                                   <i aria-hidden="true" class="eicon-caret-down">
-                                                   </i>
-                                                </div>
-                                                <select class="elementor-field-textual elementor-size-sm"
-                                                   id="form-field-message" name="form_fields[message]">
-                                                   <option value="1 Guest">
-                                                      1 Guest
-                                                   </option>
-                                                   <option value="2 Guest">
-                                                      2 Guest
-                                                   </option>
-                                                   <option value="3 Guest">
-                                                      3 Guest
-                                                   </option>
-                                                   <option value="4 Guest">
-                                                      4 Guest
-                                                   </option>
-                                                   <option value="5 Guest">
-                                                      5 Guest
-                                                   </option>
-                                                </select>
-                                             </div>
-                                          </div>
-                                          <div
-                                             class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_3 elementor-col-50">
-                                             <div class="elementor-field elementor-select-wrapper remove-before">
-                                                <div class="select-caret-down-wrapper">
-                                                   <i aria-hidden="true" class="eicon-caret-down">
-                                                   </i>
-                                                </div>
-                                                <select class="elementor-field-textual elementor-size-sm"
-                                                   id="form-field-field_3" name="form_fields[field_3]">
-                                                   <option value="Yes, I will be there ">
-                                                      Yes, I will be there
-                                                   </option>
-                                                   <option value="Sorry, I can't come">
-                                                      Sorry, I can't come
-                                                   </option>
-                                                </select>
-                                             </div>
-                                          </div>
-                                          <div
-                                             class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-field_1 elementor-col-100 elementor-field-required">
-                                             <textarea aria-required="true"
-                                                class="elementor-field-textual elementor-field elementor-size-sm"
-                                                id="form-field-field_1" name="form_fields[field_1]"
-                                                placeholder="Something you say" required="required" rows="4"></textarea>
-                                          </div>
-                                          <div
-                                             class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                                             <button class="elementor-button elementor-size-lg" type="submit">
-                                                <span>
-                                                   <span class="elementor-button-icon">
-                                                   </span>
-                                                   <span class="elementor-button-text">
-                                                      Attend
-                                                   </span>
-                                                </span>
-                                             </button>
-                                          </div>
-                                       </div>
-                                    </form>
-                                 </div>
-                              </div>
+
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
             </section>
+
             <!-- <section
                class="elementor-section elementor-top-section elementor-element elementor-element-29a40d5c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                data-element_type="section" data-id="29a40d5c">
